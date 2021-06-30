@@ -1,5 +1,4 @@
 const aboutContainer = document.getElementById("about__container");
-console.log(aboutContainer);
 
 let details = [
   {
@@ -28,7 +27,7 @@ const renderInfo = (arr) => {
   const details = arr
     .map((detail) => {
       return `
-                <div class="detail__contaniner">
+                <div class="detail__container">
                 <img class="detail__container--svg" src="${detail.image}" alt="image"/>
                 <h2 class="detail__container--title">${detail.title}</h2>
                 <p class="detail__container--description">${detail.description}</p>
