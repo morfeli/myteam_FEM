@@ -271,6 +271,92 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   color: #cccccc;
 }
 
+.quotes__container {
+  padding-bottom: 5rem;
+}
+
+.success__container {
+  background-color: #014e56;
+  overflow: hidden;
+}
+
+.success__container--svg {
+  margin-bottom: 3rem;
+}
+
+.success__container--svg2 {
+  position: relative;
+  left: 175px;
+  top: 5px;
+}
+
+.success__container--title {
+  margin: 0 auto;
+  font-family: "Livvic", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  width: 315px;
+}
+
+.success__container--span {
+  color: #79c8c7;
+}
+
+.quote__container {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quote__container--svg {
+  margin-top: 1rem;
+  width: 62px;
+  height: 62px;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #79c8c7;
+}
+
+.quote__container--title {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-family: "Livvic", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #79c8c7;
+}
+
+.quote__container--description {
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  width: 325px;
+  position: relative;
+  bottom: 20px;
+}
+
+.quote__container--position {
+  font-family: "Livvic", sans-serif;
+  font-style: italic;
+  color: white;
+  font-size: 13px;
+}
+
 @media (max-width: 768px) {
   .toggle-button {
     display: -webkit-box;
