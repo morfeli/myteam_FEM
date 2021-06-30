@@ -196,6 +196,41 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   text-align: center;
 }
 
+.information__container {
+  background-color: #004047;
+}
+
+.build__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.build__container--divider {
+  width: 50px;
+  height: 4px;
+  background-color: #f67e7e;
+  border: unset;
+  position: relative;
+  left: 35px;
+  margin-top: 2rem;
+}
+
+.build__container--title {
+  font-family: "Livvic", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  width: 320px;
+  margin-top: 3rem;
+}
+
+.build__container--svg {
+  position: relative;
+  left: 40px;
+}
+
 @media (max-width: 768px) {
   .toggle-button {
     display: -webkit-box;

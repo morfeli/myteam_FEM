@@ -161,6 +161,37 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
 }
 
+.information__container {
+  background-color: $deep-jungle-green;
+}
+
+.build__container {
+  display: flex;
+  overflow: hidden;
+  &--divider {
+    width: 50px;
+    height: 4px;
+    background-color: $light-coral;
+    border: unset;
+    position: relative;
+    left: 35px;
+    margin-top: 2rem;
+  }
+  &--title {
+    font-family: "Livvic", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: $whitebaby;
+    width: 320px;
+    margin-top: 3rem;
+  }
+
+  &--svg {
+    position: relative;
+    left: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .toggle-button {
     display: flex;
