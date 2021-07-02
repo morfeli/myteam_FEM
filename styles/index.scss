@@ -329,6 +329,52 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
 }
 
+.footer__container {
+  background-color: $deep-jungle-green;
+  height: 432px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  &--ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 107px;
+  }
+
+  &--li {
+    list-style: none;
+  }
+
+  &--a {
+    text-decoration: none;
+    color: $whitebaby;
+    font-family: "Livvic", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  &--addressBox {
+    width: 327px;
+  }
+
+  &--p {
+    text-align: center;
+    color: hsl(0, 0%, 60%);
+    font-family: "Livvic", sans-serif;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  &--icons {
+    display: flex;
+    width: 140px;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
 @media (max-width: 768px) {
   .toggle-button {
     display: flex;

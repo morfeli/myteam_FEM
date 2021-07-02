@@ -410,6 +410,69 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   top: 0px;
 }
 
+.footer__container {
+  background-color: #004047;
+  height: 432px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer__container--ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 107px;
+}
+
+.footer__container--li {
+  list-style: none;
+}
+
+.footer__container--a {
+  text-decoration: none;
+  color: white;
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.footer__container--addressBox {
+  width: 327px;
+}
+
+.footer__container--p {
+  text-align: center;
+  color: #999999;
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.footer__container--icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 140px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media (max-width: 768px) {
   .toggle-button {
     display: -webkit-box;
