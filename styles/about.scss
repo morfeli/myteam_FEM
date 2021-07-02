@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "partial";
+
+header {
+  background-color: $midnight-green;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.navbar__logo {
+  cursor: pointer;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar-item {
+  text-decoration: none;
+  display: block;
+  margin-right: 0.5rem;
+  padding: 0.8rem;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.navbar--btn {
+  font-weight: bold;
+  color: white;
+  width: 173px;
+  padding: 1.3rem;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  border: none;
+
+  cursor: pointer;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  margin-top: 2rem;
+  z-index: 100;
+}
+
+input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.middle {
+  height: 3px;
+  width: 1.875rem;
+  background-color: $whitebaby;
+  border-radius: 3.125rem;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+.top {
+  bottom: 5px;
+  height: 3px;
+  width: 1.875rem;
+  background-color: $whitebaby;
+  border-radius: 3.125rem;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+.bottom {
+  top: 10px;
+  height: 3px;
+  width: 1.875rem;
+  background-color: $whitebaby;
+  border-radius: 3.125rem;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+input[type="checkbox"]:checked ~ .toggle-button .top {
+  transform: rotate(-50deg);
+  width: 1.56rem;
+  transform-origin: right;
+  top: -10px;
+  background-color: white;
+}
+
+input[type="checkbox"]:checked ~ .toggle-button .bottom {
+  transform: rotate(50deg);
+  width: 1.56rem;
+  transform-origin: right;
+  top: 10px;
+  background-color: white;
+}
+
+input[type="checkbox"]:checked ~ .toggle-button .middle {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+.navbar--btn-mobilemenu {
+  display: none;
+}
+
+.hero__container {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  &--span {
+    color: $light-coral;
+  }
+  &--title {
+    font-family: "Livvic", sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 240px;
+    color: $whitebaby;
+  }
+  &--description {
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+    width: 345px;
+    font-family: "Livvic", sans-serif;
+    font-weight: 600;
+    color: $whitebaby;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  &--svg {
+    position: relative;
+    left: 185px;
+    top: 100px;
+  }
+}
+
+.ready__container {
+  height: 302px;
+  background-color: $light-coral;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  &--title {
+    margin-top: 2rem;
+    font-family: "Livvic", sans-serif;
+    font-weight: bold;
+    color: $deep-jungle-green;
+    text-align: center;
+    margin-top: 3rem;
+    width: 330px;
+    font-size: 32px;
+  }
+  &--btn {
+    margin-top: 1rem;
+    background-color: transparent;
+    width: 153px;
+    height: 48px;
+    border-radius: 50px;
+    border-color: black;
+  }
+  &--a {
+    text-decoration: none;
+    color: $deep-jungle-green;
+    font-family: "Livvic", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  &--svg {
+    position: relative;
+    right: 115px;
+    top: 0px;
+  }
+}
+
+.footer__container {
+  background-color: $deep-jungle-green;
+  height: 432px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  &--ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 107px;
+  }
+
+  &--li {
+    list-style: none;
+  }
+
+  &--a {
+    text-decoration: none;
+    color: $whitebaby;
+    font-family: "Livvic", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  &--addressBox {
+    width: 327px;
+  }
+
+  &--p {
+    text-align: center;
+    color: hsl(0, 0%, 60%);
+    font-family: "Livvic", sans-serif;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  &--icons {
+    display: flex;
+    width: 140px;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.directors__container {
+  background-color: $deep-jungle-green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &--title {
+    font-family: "Livvic", sans-serif;
+    font-weight: bold;
+    color: $whitebaby;
+    font-size: 2rem;
+  }
+}
+
+.director__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &--avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: $rapture-blue;
+  }
+}
+.clients__container {
+  background-color: $deep-jungle-green;
+  background-image: url("../assets/bg-pattern-about-4.svg");
+  background-repeat: no-repeat;
+  background-position: -60% -40%;
+  height: 456px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  &--title {
+    font-family: "Livvic", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: $whitebaby;
+  }
+  &--img {
+    width: 146px;
+    height: 24px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .mobile--divider {
+    display: flex;
+    position: relative;
+    top: 80px;
+    width: 249px;
+    height: 1px;
+    margin: 0 auto;
+  }
+
+  .navbar--btn-mobilemenu {
+    display: block;
+
+    font-weight: bold;
+    color: white;
+    width: 173px;
+    padding: 1.3rem;
+    border-radius: 30px;
+    margin: 0 auto;
+    border: none;
+
+    cursor: pointer;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    height: auto;
+    margin: 2rem auto;
+    text-align: center;
+    display: none;
+  }
+
+  .navbar-links.active {
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    top: 0px;
+    right: 0vw;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    height: 650px;
+    width: 300px;
+    background-color: #1b262f;
+  }
+
+  .navbar-links ul {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-around;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+  }
+
+  .navbar-item {
+    color: hsl(0, 0%, 70%);
+    font-size: 20px;
+  }
+
+  .navbar--btn {
+    display: none;
+  }
+}
