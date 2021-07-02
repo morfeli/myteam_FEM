@@ -255,7 +255,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 .directors__container {
-  background-color: $deep-jungle-green;
+  background-color: $midnight-green;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -274,6 +274,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 327px;
+  height: 253px;
+  background-color: $deep-jungle-green;
+  margin-top: 2rem;
 
   &--avatar {
     width: 96px;
