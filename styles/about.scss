@@ -260,6 +260,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 5rem;
 
   &--title {
     font-family: "Livvic", sans-serif;
@@ -276,8 +277,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   align-items: center;
   width: 327px;
   height: 253px;
-  background-color: $deep-jungle-green;
-  margin-top: 2rem;
+  background-color: $sacramento-state-green;
+  margin-top: 3rem;
 
   &--avatar {
     width: 96px;
@@ -285,6 +286,35 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     border-radius: 50px;
     border-style: solid;
     border-color: $rapture-blue;
+  }
+
+  &--title {
+    font-family: "Livvic", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: $rapture-blue;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  &--role {
+    font-family: "Livvic", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 15px;
+    color: $whitebaby;
+    margin-bottom: 0.5rem;
+  }
+
+  &--iconBox {
+    width: 56px;
+    height: 56px;
+    background-color: $light-coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: relative;
+    top: 45px;
   }
 }
 .clients__container {

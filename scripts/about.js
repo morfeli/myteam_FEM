@@ -41,7 +41,9 @@ const renderCards = (arr) => {
                 <img class="director__card--avatar" src="${card.image}" alt="director-img" />
                 <h1 class="director__card--title">${card.name}</h1>
                 <p class="director__card--role">${card.role}</p>
+                <div class="director__card--iconBox">
                 <img class="director__card--icon" src="${card.icon}" alt="icon" />
+                </div>
                 </div>
         
         

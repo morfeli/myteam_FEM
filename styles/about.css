@@ -334,6 +334,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 5rem;
 }
 
 .directors__container--title {
@@ -359,8 +360,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
           align-items: center;
   width: 327px;
   height: 253px;
-  background-color: #004047;
-  margin-top: 2rem;
+  background-color: #012f34;
+  margin-top: 3rem;
 }
 
 .director__card--avatar {
@@ -369,6 +370,42 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   border-radius: 50px;
   border-style: solid;
   border-color: #79c8c7;
+}
+
+.director__card--title {
+  font-family: "Livvic", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #79c8c7;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.director__card--role {
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.director__card--iconBox {
+  width: 56px;
+  height: 56px;
+  background-color: #f67e7e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  position: relative;
+  top: 45px;
 }
 
 .clients__container {
