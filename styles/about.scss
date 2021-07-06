@@ -132,7 +132,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 .hero__container {
-  margin-top: 5rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -152,7 +152,6 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
   &--description {
     margin-top: 1rem;
-    margin-bottom: 6rem;
     width: 345px;
     font-family: "Livvic", sans-serif;
     font-weight: 600;
@@ -255,6 +254,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 .directors__container {
+  padding-top: 2rem;
   background-color: $midnight-green;
   display: flex;
   flex-direction: column;
