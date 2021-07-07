@@ -345,14 +345,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 .director__card {
+  position: relative;
   width: 327px;
   height: 253px;
-  background-color: #012f34;
   margin-top: 3rem;
-  -webkit-transform: perspective(600px) rotateY(0);
-          transform: perspective(600px) rotateY(0);
-  -webkit-transform: perspective(600px) rotateY(var(--rotate-y, 0));
-          transform: perspective(600px) rotateY(var(--rotate-y, 0));
+  -webkit-transform: perspective(1000px) rotateY(var(--rotate-y, 0));
+          transform: perspective(1000px) rotateY(var(--rotate-y, 0));
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transition: 1.5s;
@@ -360,6 +358,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 .director__card--frontside {
+  position: absolute;
+  background-color: #012f34;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,11 +374,6 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.director__card--backside {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -424,6 +420,56 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   border-radius: 50px;
   position: relative;
   top: 45px;
+}
+
+.director__card--backside {
+  position: absolute;
+  background-color: #002529;
+  width: 100%;
+  height: 226px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.director__card--backTitle {
+  font-family: "Livvic", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  color: #79c8c7;
+}
+
+.director__card--backQuote {
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 15px;
+  width: 224px;
+  text-align: center;
+}
+
+.director__card--backIcons {
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .flipped {
