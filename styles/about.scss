@@ -132,7 +132,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 .hero__container {
-  margin-top: 2rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -271,14 +271,25 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 .director__card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 327px;
   height: 253px;
   background-color: $sacramento-state-green;
   margin-top: 3rem;
+  transform: perspective(600px) rotateY(0);
+  transform: perspective(600px) rotateY(var(--rotate-y, 0));
+  transform-style: preserve-3d;
+  transition: 1.5s;
+
+  &--frontside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+  }
+  &--backside {
+    backface-visibility: hidden;
+  }
 
   &--avatar {
     width: 96px;
@@ -317,6 +328,15 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     top: 45px;
   }
 }
+
+.flipped {
+  --rotate-y: 180deg;
+}
+
+.open {
+  background-color: red;
+}
+
 .clients__container {
   background-color: $deep-jungle-green;
   background-image: url("../assets/bg-pattern-about-4.svg");

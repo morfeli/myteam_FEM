@@ -156,7 +156,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 .hero__container {
-  margin-top: 2rem;
+  margin-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,6 +345,21 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 .director__card {
+  width: 327px;
+  height: 253px;
+  background-color: #012f34;
+  margin-top: 3rem;
+  -webkit-transform: perspective(600px) rotateY(0);
+          transform: perspective(600px) rotateY(0);
+  -webkit-transform: perspective(600px) rotateY(var(--rotate-y, 0));
+          transform: perspective(600px) rotateY(var(--rotate-y, 0));
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.director__card--frontside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,16 +367,19 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 327px;
-  height: 253px;
-  background-color: #012f34;
-  margin-top: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.director__card--backside {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .director__card--avatar {
@@ -406,6 +424,14 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   border-radius: 50px;
   position: relative;
   top: 45px;
+}
+
+.flipped {
+  --rotate-y: 180deg;
+}
+
+.open {
+  background-color: red;
 }
 
 .clients__container {

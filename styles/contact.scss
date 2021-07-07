@@ -199,6 +199,116 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
 }
 
+//
+
+.main {
+  background-color: $midnight-green;
+  padding-top: 5rem;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &--title {
+    font-family: "Livvic", sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: $whitebaby;
+    margin-bottom: 1rem;
+  }
+
+  &--title2 {
+    font-family: "Livvic", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: $light-coral;
+    margin-bottom: 2rem;
+  }
+
+  &--boxes {
+    display: flex;
+    flex-direction: column;
+    height: 268px;
+    justify-content: space-between;
+  }
+
+  &--box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 327px;
+  }
+
+  &--p {
+    font-family: "Livvic", sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 28px;
+    color: $whitebaby;
+    width: 237px;
+  }
+}
+
+.form__container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+  &--submit {
+    width: 123px;
+    height: 48px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 1rem;
+    margin-right: 12rem;
+    font-family: "Livvic", sans-serif;
+    font-weight: 600;
+  }
+}
+
+input {
+  width: 327px;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px white;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  color: hsla(0, 0%, 60%, 0.7);
+  //   transition: all 0.5s ease-in-out;
+}
+
+input::placeholder {
+  color: hsl(0, 0%, 80%);
+}
+
+textarea::placeholder {
+  color: hsl(0, 0%, 80%);
+}
+
+input:focus {
+  color: white;
+}
+
+textarea {
+  width: 327px;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px white;
+  padding-left: 1rem;
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  color: hsla(0, 0%, 60%, 0.7);
+}
+//
+
 .footer__container {
   background-color: $deep-jungle-green;
   height: 432px;

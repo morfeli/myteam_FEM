@@ -1,4 +1,6 @@
 const directorsContainer = document.getElementById("directors__cardBox");
+const toggleBtn = document.getElementsByClassName("director__card--iconBox");
+console.log(toggleBtn);
 
 const directorsArr = [
   {
@@ -38,11 +40,16 @@ const renderCards = (arr) => {
     .map((card) => {
       return `
                 <div class="director__card">
+                <div class="director__card--frontside">
                 <img class="director__card--avatar" src="${card.image}" alt="director-img" />
                 <h1 class="director__card--title">${card.name}</h1>
                 <p class="director__card--role">${card.role}</p>
                 <div class="director__card--iconBox">
                 <img class="director__card--icon" src="${card.icon}" alt="icon" />
+                </div>
+                </div>
+                <div class="director__card--backside">
+                <h1>test</h1>
                 </div>
                 </div>
         
@@ -55,3 +62,10 @@ const renderCards = (arr) => {
 };
 
 renderCards(directorsArr);
+
+Array.from(toggleBtn).forEach((el) =>
+  el.addEventListener("click", (event) => {
+    const card = event.target.closest(".director__card");
+    card.classList.toggle("flipped");
+  })
+);
