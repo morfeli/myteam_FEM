@@ -362,6 +362,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     display: flex;
     justify-content: space-between;
   }
+  &--backIcon {
+    object-fit: contain;
+  }
 
   &--iconBox:hover {
     background-color: $rapture-blue;
