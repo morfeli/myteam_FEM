@@ -504,7 +504,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   background-image: url("../assets/bg-pattern-about-4.svg");
   background-repeat: no-repeat;
   background-position: -60% -40%;
-  height: 456px;
+  height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,6 +517,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-bottom: 3rem;
 }
 
 .clients__container--title {
