@@ -43,6 +43,9 @@ header {
   padding: 0.8rem;
   font-size: 15px;
   font-weight: bold;
+  @include tablet {
+    color: red;
+  }
 }
 
 .navbar--btn {

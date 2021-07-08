@@ -22,13 +22,13 @@ $desktop: 1440px;
   }
 }
 
-@mixin mobile {
+@mixin tablet {
   @media (min-width: $tablet) {
     @content;
   }
 }
 
-@mixin mobile {
+@mixin desktop {
   @media (min-width: $desktop) {
     @content;
   }

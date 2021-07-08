@@ -58,8 +58,10 @@ const renderInfo = (arr) => {
       return `
                 <div class="detail__container">
                 <img class="detail__container--svg" src="${detail.image}" alt="image"/>
+                <div class="detail__container--textBox">
                 <h2 class="detail__container--title">${detail.title}</h2>
                 <p class="detail__container--description">${detail.description}</p>
+                </div>
                 </div>
         `;
     })
