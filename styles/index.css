@@ -39,7 +39,7 @@ header {
 
 @media (min-width: 768px) {
   .navbar-links {
-    margin-right: 13rem;
+    margin-right: 8rem;
   }
 }
 
@@ -374,10 +374,22 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   margin-bottom: 3rem;
 }
 
+@media (min-width: 768px) {
+  .success__container--svg {
+    margin-bottom: unset;
+  }
+}
+
 .success__container--svg2 {
   position: relative;
   left: 215px;
   top: 5px;
+}
+
+@media (min-width: 768px) {
+  .success__container--svg2 {
+    left: 600px;
+  }
 }
 
 .success__container--title {
@@ -388,6 +400,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   color: white;
   text-align: center;
   width: 315px;
+}
+
+@media (min-width: 768px) {
+  .success__container--title {
+    width: 490px;
+  }
 }
 
 .success__container--span {
@@ -420,6 +438,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   border-color: #79c8c7;
 }
 
+@media (min-width: 768px) {
+  .quote__container--svg {
+    width: 70px;
+    height: 70px;
+  }
+}
+
 .quote__container--title {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
@@ -427,6 +452,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   font-weight: bold;
   font-size: 1.2rem;
   color: #79c8c7;
+}
+
+@media (min-width: 768px) {
+  .quote__container--title {
+    margin-top: unset;
+  }
 }
 
 .quote__container--description {
@@ -438,6 +469,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   width: 325px;
   position: relative;
   bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .quote__container--description {
+    width: 570px;
+  }
 }
 
 .quote__container--position {
@@ -477,6 +514,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   font-size: 32px;
 }
 
+@media (min-width: 768px) {
+  .ready__container--title {
+    width: 336px;
+  }
+}
+
 .ready__container--btn {
   margin-top: 1rem;
   background-color: transparent;
@@ -500,6 +543,42 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   top: 0px;
 }
 
+@media (min-width: 768px) {
+  .ready__container--svg {
+    right: 300px;
+  }
+}
+
+.ready__container--textBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .ready__container--textBox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 600px;
+    margin-top: 5rem;
+  }
+}
+
 .footer__container {
   background-color: #002529;
   height: 432px;
@@ -517,6 +596,14 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       justify-content: space-around;
 }
 
+@media (min-width: 768px) {
+  .footer__container--logo {
+    position: relative;
+    right: 15rem;
+    top: 2.5rem;
+  }
+}
+
 .footer__container--ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -525,6 +612,14 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 107px;
+}
+
+@media (min-width: 768px) {
+  .footer__container--ul {
+    position: relative;
+    top: 10rem;
+    right: 15rem;
+  }
 }
 
 .footer__container--li {
@@ -551,6 +646,16 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   line-height: 25px;
 }
 
+@media (min-width: 768px) {
+  .footer__container--p {
+    text-align: right;
+    position: relative;
+    left: 12rem;
+    bottom: 4rem;
+    line-height: 3.5rem;
+  }
+}
+
 .footer__container--icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -561,6 +666,20 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 768px) {
+  .footer__container--icons {
+    position: relative;
+    right: 15rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #copyright {
+    position: relative;
+    left: 14rem;
+  }
 }
 
 @media (max-width: 768px) {
