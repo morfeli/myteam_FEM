@@ -367,7 +367,7 @@ textarea {
 
   &--p {
     text-align: center;
-    color: !important hsl(0, 0%, 60%);
+    color: hsl(0, 0%, 60%);
     font-family: "Livvic", sans-serif;
     font-weight: 600;
     line-height: 25px;
@@ -379,4 +379,8 @@ textarea {
     justify-content: space-around;
     align-items: center;
   }
+}
+
+#phone-number {
+  color: hsl(0, 0%, 60%);
 }
