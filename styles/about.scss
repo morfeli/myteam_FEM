@@ -204,6 +204,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     margin-top: 3rem;
     width: 330px;
     font-size: 32px;
+    @include tablet {
+      width: 336px;
+    }
   }
   &--btn {
     margin-top: 1rem;
@@ -224,6 +227,22 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     position: relative;
     right: 115px;
     top: 0px;
+    @include tablet {
+      right: 300px;
+    }
+  }
+  &--textBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+      flex-direction: row;
+      align-items: baseline;
+
+      justify-content: space-between;
+      width: 600px;
+      margin-top: 5rem;
+    }
   }
 }
 
@@ -235,10 +254,23 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   align-items: center;
   justify-content: space-around;
 
+  &--logo {
+    @include tablet {
+      position: relative;
+      right: 15rem;
+      top: 2.5rem;
+    }
+  }
+
   &--ul {
     display: flex;
     justify-content: space-evenly;
     width: 107px;
+    @include tablet {
+      position: relative;
+      top: 10rem;
+      right: 15rem;
+    }
   }
 
   &--li {
@@ -263,6 +295,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     font-family: "Livvic", sans-serif;
     font-weight: 600;
     line-height: 25px;
+    @include tablet {
+      text-align: right;
+      position: relative;
+      left: 12rem;
+      bottom: 4rem;
+      line-height: 3.5rem;
+    }
   }
 
   &--icons {
@@ -270,6 +309,17 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     width: 140px;
     justify-content: space-around;
     align-items: center;
+    @include tablet {
+      position: relative;
+      right: 15rem;
+    }
+  }
+}
+
+#copyright {
+  @include tablet {
+    position: relative;
+    left: 14rem;
   }
 }
 
