@@ -527,10 +527,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 .clients__container--img {
-  width: 146px;
-  height: 24px;
   -o-object-fit: contain;
      object-fit: contain;
+  width: 160px;
+  height: 60px;
 }
 
 @media (max-width: 768px) {

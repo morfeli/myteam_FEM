@@ -404,9 +404,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     color: $whitebaby;
   }
   &--img {
-    width: 146px;
-    height: 24px;
     object-fit: contain;
+    width: 160px;
+    height: 60px;
   }
 }
 

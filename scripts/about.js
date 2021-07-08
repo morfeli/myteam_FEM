@@ -104,7 +104,9 @@ Array.from(toggleBtn).forEach((el) =>
     card.classList.toggle("flipped");
     if (card.classList.contains("flipped")) {
       const iconBox = event.target.closest(".director__card--iconBox");
-      iconBox.classList.toggle("switched");
+      iconBox.classList.add("switched");
+    } else {
+      iconBox.classList.remove("switched");
     }
   })
 );
