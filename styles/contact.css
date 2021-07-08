@@ -326,6 +326,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   margin-right: 12rem;
   font-family: "Livvic", sans-serif;
   font-weight: 600;
+  background-color: white;
+  color: #004047;
 }
 
 input {
