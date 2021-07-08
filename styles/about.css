@@ -445,6 +445,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }

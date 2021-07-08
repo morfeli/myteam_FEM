@@ -340,7 +340,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    // backface-visibility: hidden;
+    backface-visibility: hidden;
     transform: rotateY(180deg);
   }
   &--backTitle {
