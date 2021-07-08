@@ -397,7 +397,7 @@ textarea {
   font-style: italic;
   font-size: 11px;
   position: relative;
-  bottom: 20px;
+  bottom: 40px;
   right: 5px;
 }
 
@@ -472,7 +472,7 @@ textarea {
 
 .footer__container--p {
   text-align: center;
-  color: #999999;
+  color: !important #999999;
   font-family: "Livvic", sans-serif;
   font-weight: 600;
   line-height: 25px;

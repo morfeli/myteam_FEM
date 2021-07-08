@@ -317,7 +317,7 @@ textarea {
   font-style: italic;
   font-size: 11px;
   position: relative;
-  bottom: 20px;
+  bottom: 40px;
   right: 5px;
 }
 
@@ -367,7 +367,7 @@ textarea {
 
   &--p {
     text-align: center;
-    color: hsl(0, 0%, 60%);
+    color: !important hsl(0, 0%, 60%);
     font-family: "Livvic", sans-serif;
     font-weight: 600;
     line-height: 25px;
