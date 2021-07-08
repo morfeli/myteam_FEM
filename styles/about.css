@@ -422,9 +422,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50px;
-  position: relative;
-  top: 30px;
   cursor: pointer;
+  -webkit-transform: translateY(80%) rotate(0);
+          transform: translateY(80%) rotate(0);
+  margin-top: 1rem;
 }
 
 .director__card--backside {
