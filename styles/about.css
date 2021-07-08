@@ -378,8 +378,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
 }
 
 .director__card--avatar {
@@ -425,7 +425,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   cursor: pointer;
   -webkit-transform: translateY(80%) rotate(0);
           transform: translateY(80%) rotate(0);
-  margin-top: 1rem;
+  z-index: 1;
 }
 
 .director__card--backside {
@@ -446,8 +446,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }

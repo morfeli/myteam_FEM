@@ -292,6 +292,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     align-items: center;
     justify-content: center;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
   &--avatar {
     width: 96px;
@@ -328,7 +329,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     border-radius: 50px;
     cursor: pointer;
     transform: translateY(80%) rotate(0);
-    margin-top: 1rem;
+    z-index: 1;
     // backface-visibility: hidden;
   }
 
@@ -342,6 +343,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     align-items: center;
     justify-content: space-evenly;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     transform: rotateY(180deg);
   }
   &--backTitle {
