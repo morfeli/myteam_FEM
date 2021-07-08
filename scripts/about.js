@@ -106,6 +106,7 @@ Array.from(toggleBtn).forEach((el) =>
       const iconBox = event.target.closest(".director__card--iconBox");
       iconBox.classList.add("switched");
     } else {
+      const iconBox = event.target.closest(".director__card--iconBox");
       iconBox.classList.remove("switched");
     }
   })

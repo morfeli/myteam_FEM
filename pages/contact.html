@@ -65,7 +65,7 @@
       </section>
       <form class="form__container" action="POST" id="form">
         <label for="name"></label>
-        <input type="text" id="name" name="name" placeholder="Name" value="" />
+        <input type="text" id="name" name="name" placeholder="Name" />
         <p class="error" id="name_error"></p>
         <label for="emailaddress"></label>
         <input
@@ -88,13 +88,13 @@
         <input type="text" id="title" name="title" placeholder="Title" />
         <p class="error" id="title_error"></p>
         <label for="message"></label>
-        <textarea
+        <input
           name="message"
           id="message"
           cols="30"
           rows="5"
           placeholder="Message"
-        ></textarea>
+        ></input>
         <p class="error" id="message_error"></p>
         <div class="submit__container">
           <button class="form__container--submit" type="submit">submit</button>
@@ -164,5 +164,6 @@
         <p class="footer__container--p">Copyright 2020. All Rights Reserved</p>
       </div>
     </footer>
+    <script src="../scripts/contact.js"></script>
   </body>
 </html>

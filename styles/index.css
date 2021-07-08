@@ -411,7 +411,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 .footer__container {
-  background-color: #004047;
+  background-color: #002529;
   height: 432px;
   display: -webkit-box;
   display: -ms-flexbox;
