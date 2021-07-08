@@ -329,7 +329,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     position: relative;
     top: 30px;
     cursor: pointer;
-    backface-visibility: hidden;
+    // backface-visibility: hidden;
   }
 
   &--backside {

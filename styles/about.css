@@ -425,8 +425,6 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   position: relative;
   top: 30px;
   cursor: pointer;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
 }
 
 .director__card--backside {
