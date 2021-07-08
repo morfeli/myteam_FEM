@@ -37,6 +37,12 @@ header {
           justify-content: space-between;
 }
 
+@media (min-width: 768px) {
+  .navbar-links {
+    margin-right: 8rem;
+  }
+}
+
 .navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,7 +64,9 @@ header {
 
 @media (min-width: 768px) {
   .navbar-item {
-    color: red;
+    color: white;
+    font-family: "Livvic", sans-serif;
+    font-weight: 600;
   }
 }
 
@@ -69,8 +77,11 @@ header {
   padding: 1.3rem;
   border-radius: 30px;
   margin-bottom: 1rem;
-  border: none;
   cursor: pointer;
+  background-color: transparent;
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  border: 2px solid white;
 }
 
 .toggle-button {
@@ -192,6 +203,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   color: white;
 }
 
+@media (min-width: 768px) {
+  .hero__container--title {
+    font-size: 4rem;
+  }
+}
+
 .hero__container--description {
   margin-top: 1rem;
   width: 345px;
@@ -202,10 +219,23 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .hero__container--description {
+    width: 480px;
+  }
+}
+
 .hero__container--svg {
   position: relative;
   left: 185px;
   top: 100px;
+}
+
+@media (min-width: 768px) {
+  .hero__container--svg {
+    left: 24rem;
+    top: -6rem;
+  }
 }
 
 .ready__container {
@@ -361,6 +391,17 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   background-position: right;
 }
 
+.directors__container--cardBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .director__card {
   position: relative;
   width: 327px;
@@ -372,6 +413,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
           transform-style: preserve-3d;
   -webkit-transition: 1.5s;
   transition: 1.5s;
+}
+
+@media (min-width: 768px) {
+  .director__card {
+    margin-right: 2rem;
+  }
 }
 
 .director__card--frontside {
@@ -530,6 +577,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   padding-bottom: 3rem;
 }
 
+@media (min-width: 768px) {
+  .clients__container {
+    height: 308px;
+  }
+}
+
 .clients__container--title {
   font-family: "Livvic", sans-serif;
   font-weight: bold;
@@ -537,11 +590,50 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   color: white;
 }
 
+@media (min-width: 768px) {
+  .clients__container--title {
+    margin-top: 5rem;
+  }
+}
+
+.clients__container--imgBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 400px;
+}
+
+@media (min-width: 768px) {
+  .clients__container--imgBox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 .clients__container--img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 160px;
   height: 60px;
+}
+
+@media (min-width: 768px) {
+  .clients__container--img {
+    width: 120px;
+    height: 130px;
+  }
 }
 
 @media (max-width: 768px) {
