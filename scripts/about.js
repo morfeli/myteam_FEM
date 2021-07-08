@@ -84,9 +84,9 @@ const renderCards = (arr) => {
                 <div class="director__card--backIcons">
                 <img class="director__card--backIcon" src="${card.twitterIcon}" alt="twitter"/>
                 <img class="director__card--backIcon" src="${card.linkedinIcon}" alt="linked"/>
+                </div>
                 <div class="director__card--iconBox">
                 <img class="director__card--icon" src="${card.icon}" alt="icon" />
-                </div>
                 </div>
                 </div>
                 </div>
