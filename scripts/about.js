@@ -9,7 +9,7 @@ const directorsArr = [
     role: "Founder & CEO",
     icon: "../assets/icon-cross.svg",
     quote:
-      "It always amazes me how much talent there is in every corner of the globe.",
+      "'It always amazes me how much talent there is in every corner of the globe.'",
     twitterIcon: "../assets/icon-twitter.svg",
     linkedinIcon: "../assets/icon-linkedin.svg",
   },
@@ -19,7 +19,7 @@ const directorsArr = [
     role: "Co-founder & COO",
     icon: "../assets/icon-cross.svg",
     quote:
-      "Distributed teams required unique processes. You need to approach work in a new way.",
+      "'Distributed teams required unique processes. You need to approach work in a new way.'",
     twitterIcon: "../assets/icon-twitter.svg",
     linkedinIcon: "../assets/icon-linkedin.svg",
   },
@@ -29,7 +29,7 @@ const directorsArr = [
     role: "Co-founder & CTO",
     icon: "../assets/icon-cross.svg",
     quote:
-      "Technology is at the forefront of enabling distributed teams. That's where we come in.",
+      "'Technology is at the forefront of enabling distributed teams. That's where we come in.'",
     twitterIcon: "../assets/icon-twitter.svg",
     linkedinIcon: "../assets/icon-linkedin.svg",
   },
@@ -39,7 +39,7 @@ const directorsArr = [
     role: "Business Development Lead",
     icon: "../assets/icon-cross.svg",
     quote:
-      "Hiring similar people from similar backgrounds is a surefire way to stunt innovation.",
+      "'Hiring similar people from similar backgrounds is a surefire way to stunt innovation.'",
     twitterIcon: "../assets/icon-twitter.svg",
     linkedinIcon: "../assets/icon-linkedin.svg",
   },
@@ -49,7 +49,7 @@ const directorsArr = [
     role: "Lead Marketing",
     icon: "../assets/icon-cross.svg",
     quote:
-      "Unique perspectives shape unique products, which is what you need to survive these days.",
+      "'Unique perspectives shape unique products, which is what you need to survive these days.'",
     twitterIcon: "../assets/icon-twitter.svg",
     linkedinIcon: "../assets/icon-linkedin.svg",
   },
@@ -59,7 +59,7 @@ const directorsArr = [
     role: "Head of Talent",
     icon: "../assets/icon-cross.svg",
     quote:
-      "Empowered teams create truly amazing products. Set the north star and let them follow it.",
+      "'Empowered teams create truly amazing products. Set the north star and let them follow it.'",
     twitterIcon: "../assets/icon-twitter.svg",
     linkedinIcon: "../assets/icon-linkedin.svg",
   },
@@ -84,6 +84,9 @@ const renderCards = (arr) => {
                 <div class="director__card--backIcons">
                 <img class="director__card--backIcon" src="${card.twitterIcon}" alt="twitter"/>
                 <img class="director__card--backIcon" src="${card.linkedinIcon}" alt="linked"/>
+                <div class="director__card--iconBox">
+                <img class="director__card--icon" src="${card.icon}" alt="icon" />
+                </div>
                 </div>
                 </div>
                 </div>
@@ -102,5 +105,9 @@ Array.from(toggleBtn).forEach((el) =>
   el.addEventListener("click", (event) => {
     const card = event.target.closest(".director__card");
     card.classList.toggle("flipped");
+    if (card.classList.contains("flipped")) {
+      const iconBox = event.target.closest(".director__card--iconBox");
+      iconBox.classList.toggle("switched");
+    }
   })
 );

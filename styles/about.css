@@ -320,7 +320,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 .directors__container {
   padding-top: 2rem;
-  background-color: #014e56;
+  background-color: #004047;
+  background-image: url("../assets/bg-pattern-about-2-contact-1.svg");
+  background-repeat: no-repeat;
+  background-position: -60% -6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,6 +345,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   font-weight: bold;
   color: white;
   font-size: 2rem;
+  margin-top: 3rem;
 }
 
 .director__card {
@@ -419,7 +423,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
           align-items: center;
   border-radius: 50px;
   position: relative;
-  top: 45px;
+  top: 30px;
+  cursor: pointer;
 }
 
 .director__card--backside {
@@ -472,12 +477,20 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
           justify-content: space-between;
 }
 
+.director__card--iconBox:hover {
+  background-color: #79c8c7;
+}
+
 .flipped {
   --rotate-y: 180deg;
 }
 
-.open {
-  background-color: red;
+.switched {
+  background-color: #79c8c7;
+}
+
+.switched:hover {
+  background-color: #f67e7e;
 }
 
 .clients__container {
