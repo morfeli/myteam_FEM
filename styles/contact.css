@@ -491,6 +491,6 @@ textarea {
 }
 
 #phone-number {
-  color: #999999;
+  color: !important #999999;
 }
 /*# sourceMappingURL=contact.css.map */
