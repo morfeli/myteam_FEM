@@ -378,8 +378,6 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
 }
 
 .director__card--avatar {
