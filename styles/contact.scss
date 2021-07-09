@@ -26,6 +26,10 @@ header {
 .navbar-links {
   display: flex;
   justify-content: space-between;
+  @include tablet {
+    margin-right: 8rem;
+    width: 25vw;
+  }
 }
 
 .navbar ul {
@@ -43,6 +47,11 @@ header {
   padding: 0.8rem;
   font-size: 15px;
   font-weight: bold;
+  @include tablet {
+    color: $whitebaby;
+    font-family: "Livvic", sans-serif;
+    font-weight: 600;
+  }
 }
 
 .navbar--btn {
@@ -52,9 +61,11 @@ header {
   padding: 1.3rem;
   border-radius: 30px;
   margin-bottom: 1rem;
-  border: none;
-
   cursor: pointer;
+  background-color: transparent;
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  border: 2px solid white;
 }
 
 .toggle-button {
@@ -218,6 +229,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     font-size: 2.5rem;
     color: $whitebaby;
     margin-bottom: 1rem;
+    @include tablet {
+      font-size: 4rem;
+    }
   }
 
   &--title2 {
@@ -226,6 +240,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     font-size: 2rem;
     color: $light-coral;
     margin-bottom: 2rem;
+    @include tablet {
+      margin-top: 0.5rem;
+    }
   }
 
   &--boxes {
@@ -233,6 +250,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     flex-direction: column;
     height: 268px;
     justify-content: space-between;
+    @include tablet {
+      width: 515px;
+    }
   }
 
   &--box {
@@ -240,6 +260,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     align-items: center;
     justify-content: space-around;
     width: 327px;
+    @include tablet {
+      width: 515px;
+      justify-content: space-between;
+    }
   }
 
   &--p {
@@ -249,6 +273,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     line-height: 28px;
     color: $whitebaby;
     width: 237px;
+    @include tablet {
+      width: 420px;
+    }
   }
 }
 

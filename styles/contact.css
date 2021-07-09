@@ -37,6 +37,13 @@ header {
           justify-content: space-between;
 }
 
+@media (min-width: 768px) {
+  .navbar-links {
+    margin-right: 8rem;
+    width: 25vw;
+  }
+}
+
 .navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,6 +63,14 @@ header {
   font-weight: bold;
 }
 
+@media (min-width: 768px) {
+  .navbar-item {
+    color: white;
+    font-family: "Livvic", sans-serif;
+    font-weight: 600;
+  }
+}
+
 .navbar--btn {
   font-weight: bold;
   color: white;
@@ -63,8 +78,11 @@ header {
   padding: 1.3rem;
   border-radius: 30px;
   margin-bottom: 1rem;
-  border: none;
   cursor: pointer;
+  background-color: transparent;
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  border: 2px solid white;
 }
 
 .toggle-button {
@@ -256,12 +274,24 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 768px) {
+  .contact__container--title {
+    font-size: 4rem;
+  }
+}
+
 .contact__container--title2 {
   font-family: "Livvic", sans-serif;
   font-weight: bold;
   font-size: 2rem;
   color: #f67e7e;
   margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .contact__container--title2 {
+    margin-top: 0.5rem;
+  }
 }
 
 .contact__container--boxes {
@@ -278,6 +308,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
           justify-content: space-between;
 }
 
+@media (min-width: 768px) {
+  .contact__container--boxes {
+    width: 515px;
+  }
+}
+
 .contact__container--box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,6 +326,15 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   width: 327px;
 }
 
+@media (min-width: 768px) {
+  .contact__container--box {
+    width: 515px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .contact__container--p {
   font-family: "Livvic", sans-serif;
   font-weight: bold;
@@ -297,6 +342,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   line-height: 28px;
   color: white;
   width: 237px;
+}
+
+@media (min-width: 768px) {
+  .contact__container--p {
+    width: 420px;
+  }
 }
 
 .form__container {
