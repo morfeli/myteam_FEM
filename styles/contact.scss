@@ -252,6 +252,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     justify-content: space-between;
     @include tablet {
       width: 515px;
+      margin-top: 1rem;
     }
   }
 
@@ -286,6 +287,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   align-items: center;
   justify-content: center;
   padding-bottom: 4rem;
+  @include tablet {
+    width: 545px;
+    align-items: baseline;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
   &--submit {
     width: 123px;
     height: 48px;
@@ -312,6 +319,9 @@ input {
   font-weight: 600;
   color: hsla(0, 0%, 60%, 0.7);
   //   transition: all 0.5s ease-in-out;
+  @include tablet {
+    width: 542px;
+  }
 }
 
 input::placeholder {
@@ -370,10 +380,23 @@ textarea {
   align-items: center;
   justify-content: space-around;
 
+  &--logo {
+    @include tablet {
+      position: relative;
+      right: 15rem;
+      top: 2.5rem;
+    }
+  }
+
   &--ul {
     display: flex;
     justify-content: space-evenly;
     width: 107px;
+    @include tablet {
+      position: relative;
+      top: 10rem;
+      right: 15rem;
+    }
   }
 
   &--li {
@@ -398,6 +421,13 @@ textarea {
     font-family: "Livvic", sans-serif;
     font-weight: 600;
     line-height: 25px;
+    @include tablet {
+      text-align: right;
+      position: relative;
+      left: 12rem;
+      bottom: 4rem;
+      line-height: 3.5rem;
+    }
   }
 
   &--icons {
@@ -405,5 +435,16 @@ textarea {
     width: 140px;
     justify-content: space-around;
     align-items: center;
+    @include tablet {
+      position: relative;
+      right: 15rem;
+    }
+  }
+}
+
+#copyright {
+  @include tablet {
+    position: relative;
+    left: 14rem;
   }
 }

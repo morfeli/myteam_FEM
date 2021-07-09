@@ -311,6 +311,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 @media (min-width: 768px) {
   .contact__container--boxes {
     width: 515px;
+    margin-top: 1rem;
   }
 }
 
@@ -368,6 +369,17 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   padding-bottom: 4rem;
 }
 
+@media (min-width: 768px) {
+  .form__container {
+    width: 545px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+}
+
 .form__container--submit {
   width: 123px;
   height: 48px;
@@ -392,6 +404,12 @@ input {
   font-family: "Livvic", sans-serif;
   font-weight: 600;
   color: rgba(153, 153, 153, 0.7);
+}
+
+@media (min-width: 768px) {
+  input {
+    width: 542px;
+  }
 }
 
 input::-webkit-input-placeholder {
@@ -495,6 +513,14 @@ textarea {
       justify-content: space-around;
 }
 
+@media (min-width: 768px) {
+  .footer__container--logo {
+    position: relative;
+    right: 15rem;
+    top: 2.5rem;
+  }
+}
+
 .footer__container--ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -503,6 +529,14 @@ textarea {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 107px;
+}
+
+@media (min-width: 768px) {
+  .footer__container--ul {
+    position: relative;
+    top: 10rem;
+    right: 15rem;
+  }
 }
 
 .footer__container--li {
@@ -529,6 +563,16 @@ textarea {
   line-height: 25px;
 }
 
+@media (min-width: 768px) {
+  .footer__container--p {
+    text-align: right;
+    position: relative;
+    left: 12rem;
+    bottom: 4rem;
+    line-height: 3.5rem;
+  }
+}
+
 .footer__container--icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -539,5 +583,19 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 768px) {
+  .footer__container--icons {
+    position: relative;
+    right: 15rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #copyright {
+    position: relative;
+    left: 14rem;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
