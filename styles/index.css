@@ -510,6 +510,17 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   padding-bottom: 5rem;
 }
 
+@media (min-width: 1440px) {
+  .quotes__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 .success__container {
   background-color: #014e56;
   overflow: hidden;
@@ -537,6 +548,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
 }
 
+@media (min-width: 1440px) {
+  .success__container--svg2 {
+    left: 78rem;
+  }
+}
+
 .success__container--title {
   margin: 0 auto;
   font-family: "Livvic", sans-serif;
@@ -550,6 +567,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 @media (min-width: 768px) {
   .success__container--title {
     width: 490px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .success__container--title {
+    font-size: 48px;
+    width: 932px;
   }
 }
 
@@ -619,6 +643,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 @media (min-width: 768px) {
   .quote__container--description {
     width: 570px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .quote__container--description {
+    width: 350px;
   }
 }
 

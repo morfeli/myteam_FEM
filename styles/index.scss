@@ -356,6 +356,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 .quotes__container {
   padding-bottom: 5rem;
+  @include desktop {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 .success__container {
@@ -374,6 +378,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     @include tablet {
       left: 600px;
     }
+    @include desktop {
+      left: 78rem;
+    }
   }
   &--title {
     margin: 0 auto;
@@ -385,6 +392,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     width: 315px;
     @include tablet {
       width: 490px;
+    }
+    @include desktop {
+      font-size: 48px;
+      width: 932px;
     }
   }
   &--span {
@@ -432,6 +443,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     bottom: 20px;
     @include tablet {
       width: 570px;
+    }
+    @include desktop {
+      width: 350px;
     }
   }
   &--position {
