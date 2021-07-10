@@ -305,7 +305,22 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 .information__container {
-  background-color: #004047;
+  background-color: #002529;
+}
+
+@media (min-width: 1440px) {
+  .information__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 684px;
+  }
 }
 
 .build__container {
@@ -338,6 +353,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
 }
 
+@media (min-width: 1440px) {
+  .build__container--divider {
+    margin-top: unset;
+  }
+}
+
 .build__container--title {
   font-family: "Livvic", sans-serif;
   font-weight: bold;
@@ -351,6 +372,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   .build__container--title {
     width: 445px;
     margin-top: 9rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .build__container--title {
+    font-size: 3rem;
+    margin-top: unset;
   }
 }
 
@@ -368,6 +396,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 .about__container {
   margin-top: 5rem;
   padding-bottom: 2rem;
+}
+
+@media (min-width: 1440px) {
+  .about__container {
+    margin-top: 10rem;
+  }
 }
 
 .detail__container {
@@ -389,6 +423,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 @media (min-width: 768px) {
   .detail__container {
+    width: 650px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;

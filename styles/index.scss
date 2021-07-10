@@ -232,7 +232,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 .information__container {
-  background-color: $deep-jungle-green;
+  background-color: $dark-green;
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 684px;
+  }
 }
 
 .build__container {
@@ -253,6 +259,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       left: 54px;
       margin-top: 7rem;
     }
+    @include desktop {
+      margin-top: unset;
+    }
   }
   &--title {
     font-family: "Livvic", sans-serif;
@@ -264,6 +273,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     @include tablet {
       width: 445px;
       margin-top: 9rem;
+    }
+    @include desktop {
+      font-size: 3rem;
+      margin-top: unset;
     }
   }
 
@@ -279,6 +292,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 .about__container {
   margin-top: 5rem;
   padding-bottom: 2rem;
+  @include desktop {
+    margin-top: 10rem;
+  }
 }
 .detail__container {
   display: flex;
@@ -287,6 +303,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   justify-content: center;
   margin-bottom: 3rem;
   @include tablet {
+    width: 650px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
     flex-direction: row;
     justify-content: space-evenly;
   }
