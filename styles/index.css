@@ -312,6 +312,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   overflow: hidden;
 }
 
@@ -355,7 +361,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 @media (min-width: 768px) {
   .build__container--svg {
-    left: 180px;
+    left: 140px;
   }
 }
 

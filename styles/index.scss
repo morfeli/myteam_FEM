@@ -237,6 +237,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 .build__container {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
   overflow: hidden;
   &--divider {
     width: 50px;
@@ -268,7 +271,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     position: relative;
     left: 40px;
     @include tablet {
-      left: 180px;
+      left: 140px;
     }
   }
 }
