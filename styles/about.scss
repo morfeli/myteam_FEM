@@ -460,6 +460,14 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
 }
 
+.director__card--icon {
+  width: 20px;
+}
+
+.rotate {
+  transform: rotate(45deg);
+}
+
 .flipped {
   --rotate-y: 180deg;
 }

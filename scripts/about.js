@@ -101,13 +101,15 @@ renderCards(directorsArr);
 Array.from(toggleBtn).forEach((el) =>
   el.addEventListener("click", (event) => {
     const card = event.target.closest(".director__card");
+    const iconBox = event.target.closest(".director__card--iconBox");
+    const icon = event.target.closest(".director__card--icon");
     card.classList.toggle("flipped");
     if (card.classList.contains("flipped")) {
-      const iconBox = event.target.closest(".director__card--iconBox");
       iconBox.classList.add("switched");
+      icon.classList.add("rotate");
     } else {
-      const iconBox = event.target.closest(".director__card--iconBox");
       iconBox.classList.remove("switched");
+      icon.classList.remove("rotate");
     }
   })
 );

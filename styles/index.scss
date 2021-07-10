@@ -8,6 +8,10 @@
 
 header {
   background-color: $midnight-green;
+  @include desktop {
+    height: 700px;
+    overflow: hidden;
+  }
 }
 
 .navbar {
@@ -17,6 +21,9 @@ header {
   padding-top: 2rem;
   width: 90vw;
   margin: 0 auto;
+  @include desktop {
+    width: 1100px;
+  }
 }
 
 .navbar__logo {
@@ -29,6 +36,10 @@ header {
   @include tablet {
     margin-right: 8rem;
     width: 25vw;
+    font-size: 18px;
+  }
+  @include desktop {
+    width: 35vw;
   }
 }
 
@@ -148,6 +159,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include desktop {
+    flex-direction: row;
+    align-items: baseline;
+    width: 100%;
+    margin-left: 8rem;
+  }
 
   &--span {
     color: $light-coral;
@@ -163,6 +180,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       font-size: 4rem;
       width: 395px;
     }
+    @include desktop {
+      font-size: 6.25rem;
+      width: 530px;
+      text-align: left;
+    }
   }
   &--description {
     margin-top: 1rem;
@@ -175,6 +197,36 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     text-align: center;
     @include tablet {
       width: 500px;
+    }
+    @include desktop {
+      width: 440px;
+      text-align: left;
+
+      font-size: 18px;
+      position: relative;
+      left: 5rem;
+    }
+  }
+
+  &--svg {
+    @include desktop {
+      position: relative;
+      top: 26rem;
+      right: 18rem;
+    }
+  }
+
+  &--divider {
+    display: none;
+    @include desktop {
+      display: block;
+      width: 50px;
+      height: 4px;
+      position: relative;
+      bottom: 5rem;
+      left: 8rem;
+      background-color: #79c8c7;
+      border: none;
     }
   }
 }
