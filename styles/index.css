@@ -678,6 +678,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   overflow: hidden;
 }
 
+@media (min-width: 1440px) {
+  .ready__container {
+    height: 200px;
+  }
+}
+
 .ready__container--title {
   margin-top: 2rem;
   font-family: "Livvic", sans-serif;
@@ -692,6 +698,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 @media (min-width: 768px) {
   .ready__container--title {
     width: 336px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .ready__container--title {
+    width: 562px;
+    font-size: 3rem;
   }
 }
 
@@ -724,6 +737,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
 }
 
+@media (min-width: 1440px) {
+  .ready__container--svg {
+    right: 39rem;
+  }
+}
+
 .ready__container--textBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -751,6 +770,14 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
             justify-content: space-between;
     width: 600px;
     margin-top: 5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .ready__container--textBox {
+    width: 1060px;
+    margin-top: unset;
+    height: 10px;
   }
 }
 

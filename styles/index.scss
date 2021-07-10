@@ -464,6 +464,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  @include desktop {
+    height: 200px;
+  }
   &--title {
     margin-top: 2rem;
     font-family: "Livvic", sans-serif;
@@ -475,6 +478,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     font-size: 32px;
     @include tablet {
       width: 336px;
+    }
+    @include desktop {
+      width: 562px;
+      font-size: 3rem;
     }
   }
   &--btn {
@@ -499,6 +506,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     @include tablet {
       right: 300px;
     }
+    @include desktop {
+      right: 39rem;
+    }
   }
   &--textBox {
     display: flex;
@@ -511,6 +521,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       justify-content: space-between;
       width: 600px;
       margin-top: 5rem;
+    }
+    @include desktop {
+      width: 1060px;
+      margin-top: unset;
+      height: 10px;
     }
   }
 }
