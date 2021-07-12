@@ -537,12 +537,20 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  @include desktop {
+    height: 25vh;
+    padding-bottom: 5rem;
+  }
 
   &--logo {
     @include tablet {
       position: relative;
       right: 15rem;
       top: 2.5rem;
+    }
+    @include desktop {
+      right: 26.5rem;
+      top: 4.5rem;
     }
   }
 
@@ -554,6 +562,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       position: relative;
       top: 10rem;
       right: 15rem;
+    }
+    @include desktop {
+      width: 220px;
+      right: 27rem;
+      top: 7rem;
     }
   }
 
@@ -567,10 +580,18 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     font-family: "Livvic", sans-serif;
     font-weight: 600;
     font-size: 15px;
+    @include desktop {
+      font-size: 18px;
+    }
   }
 
   &--addressBox {
     width: 327px;
+    @include desktop {
+      right: 12rem;
+      top: 4.5rem;
+      position: relative;
+    }
   }
 
   &--p {
@@ -586,6 +607,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       bottom: 4rem;
       line-height: 3.5rem;
     }
+    @include desktop {
+      line-height: unset;
+      text-align: left;
+      line-height: 25px;
+    }
   }
 
   &--icons {
@@ -597,6 +623,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       position: relative;
       right: 15rem;
     }
+    @include desktop {
+      left: 36rem;
+      bottom: 5.5rem;
+    }
   }
 }
 
@@ -604,6 +634,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   @include tablet {
     position: relative;
     left: 14rem;
+  }
+  @include desktop {
+    left: 31.5rem;
+    bottom: 2rem;
   }
 }
 
