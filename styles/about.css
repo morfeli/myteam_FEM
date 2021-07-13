@@ -586,6 +586,22 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
 }
 
+.footer__container--icon {
+  cursor: pointer;
+}
+
+.footer__container--a:hover {
+  color: #f67e7e;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.footer__container--icon path:hover {
+  fill: #f67e7e;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 @media (min-width: 768px) {
   #copyright {
     position: relative;

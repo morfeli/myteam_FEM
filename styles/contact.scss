@@ -490,6 +490,19 @@ textarea {
       bottom: 5.5rem;
     }
   }
+  &--icon {
+    cursor: pointer;
+  }
+}
+
+.footer__container--a:hover {
+  color: $light-coral;
+  transition: 1s;
+}
+
+.footer__container--icon path:hover {
+  fill: $light-coral;
+  transition: 1s;
 }
 
 #copyright {
