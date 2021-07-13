@@ -328,6 +328,15 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 .information__container {
   background-color: #002529;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
 }
 
 @media (min-width: 1440px) {
@@ -350,13 +359,23 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .build__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    right: 100px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -377,13 +396,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   background-color: #f67e7e;
   border: unset;
   position: relative;
-  left: 35px;
+  left: 15px;
   margin-top: 2rem;
 }
 
 @media (min-width: 768px) {
   .build__container--divider {
-    left: 54px;
+    left: 99px;
     margin-top: 7rem;
   }
 }
@@ -401,14 +420,20 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   font-weight: bold;
   font-size: 2rem;
   color: white;
-  width: 320px;
+  width: 60vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-top: 3rem;
+  position: relative;
+  right: 32px;
 }
 
 @media (min-width: 768px) {
   .build__container--title {
     width: 445px;
     margin-top: 9rem;
+    margin-left: 5rem;
   }
 }
 
@@ -419,22 +444,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
 }
 
-.build__container--svg {
-  position: relative;
-  left: 40px;
-}
-
-@media (min-width: 768px) {
-  .build__container--svg {
-    left: 140px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .build__container--svg {
-    left: 50rem;
-    top: 14rem;
-  }
+.build--svg {
+  position: absolute;
+  right: -105px;
 }
 
 .about__container {

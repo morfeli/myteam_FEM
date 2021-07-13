@@ -566,6 +566,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
   &--backIcon {
     object-fit: contain;
+    cursor: pointer;
   }
 
   &--iconBox:hover {

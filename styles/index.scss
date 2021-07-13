@@ -250,6 +250,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 .information__container {
   background-color: $dark-green;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   @include desktop {
     display: flex;
     justify-content: center;
@@ -261,10 +265,14 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 .build__container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
-
   overflow: hidden;
+  @include tablet {
+    justify-content: center;
+    position: relative;
+    right: 100px;
+  }
   @include desktop {
     overflow: unset;
     justify-content: unset;
@@ -276,10 +284,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     background-color: $light-coral;
     border: unset;
     position: relative;
-    left: 35px;
+    left: 15px;
     margin-top: 2rem;
     @include tablet {
-      left: 54px;
+      left: 99px;
       margin-top: 7rem;
     }
     @include desktop {
@@ -293,29 +301,26 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     font-weight: bold;
     font-size: 2rem;
     color: $whitebaby;
-    width: 320px;
+    width: 60vw;
+    height: fit-content;
     margin-top: 3rem;
+    position: relative;
+    right: 32px;
     @include tablet {
       width: 445px;
       margin-top: 9rem;
+      margin-left: 5rem;
     }
     @include desktop {
       font-size: 3rem;
       margin-top: unset;
     }
   }
+}
 
-  &--svg {
-    position: relative;
-    left: 40px;
-    @include tablet {
-      left: 140px;
-    }
-    @include desktop {
-      left: 50rem;
-      top: 14rem;
-    }
-  }
+.build--svg {
+  position: absolute;
+  right: -105px;
 }
 
 .about__container {
