@@ -256,6 +256,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   position: relative;
   @include desktop {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 684px;
@@ -321,6 +322,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 .build--svg {
   position: absolute;
   right: -105px;
+  @include desktop {
+    bottom: 0px;
+  }
 }
 
 .about__container {
@@ -387,6 +391,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 .success__container {
   background-color: $midnight-green;
   overflow: hidden;
+  position: relative;
   &--svg {
     margin-bottom: 3rem;
     @include tablet {
@@ -394,15 +399,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     }
   }
   &--svg2 {
-    position: relative;
-    left: 215px;
-    top: 5px;
-    @include tablet {
-      left: 600px;
-    }
-    @include desktop {
-      left: 78rem;
-    }
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
   }
   &--title {
     margin: 0 auto;
@@ -492,6 +491,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  position: relative;
   @include desktop {
     height: 200px;
   }
@@ -528,15 +528,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     font-size: 18px;
   }
   &--svg {
-    position: relative;
-    right: 115px;
-    top: 0px;
-    @include tablet {
-      right: 300px;
-    }
-    @include desktop {
-      right: 39rem;
-    }
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
   }
   &--textBox {
     display: flex;

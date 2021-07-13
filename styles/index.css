@@ -344,6 +344,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -447,6 +451,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 .build--svg {
   position: absolute;
   right: -105px;
+}
+
+@media (min-width: 1440px) {
+  .build--svg {
+    bottom: 0px;
+  }
 }
 
 .about__container {
@@ -558,6 +568,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 .success__container {
   background-color: #014e56;
   overflow: hidden;
+  position: relative;
 }
 
 .success__container--svg {
@@ -571,21 +582,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 .success__container--svg2 {
-  position: relative;
-  left: 215px;
-  top: 5px;
-}
-
-@media (min-width: 768px) {
-  .success__container--svg2 {
-    left: 600px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .success__container--svg2 {
-    left: 78rem;
-  }
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
 .success__container--title {
@@ -718,6 +717,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  position: relative;
 }
 
 @media (min-width: 1440px) {
@@ -768,21 +768,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 .ready__container--svg {
-  position: relative;
-  right: 115px;
-  top: 0px;
-}
-
-@media (min-width: 768px) {
-  .ready__container--svg {
-    right: 300px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .ready__container--svg {
-    right: 39rem;
-  }
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 
 .ready__container--textBox {
