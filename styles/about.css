@@ -322,7 +322,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     height: 4px;
     position: relative;
     bottom: 5rem;
-    left: 8rem;
+    left: 5.5rem;
     background-color: #f67e7e;
     border: none;
   }
@@ -605,7 +605,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   background-color: #004047;
   background-image: url("../assets/bg-pattern-about-2-contact-1.svg");
   background-repeat: no-repeat;
-  background-position: -60px -100px;
+  background-position: -100px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -660,6 +660,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 2rem;
 }
 
 @media (min-width: 1440px) {
@@ -837,7 +838,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 .clients__container {
   background-color: #002529;
-  height: 600px;
+  height: 632px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -851,6 +852,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -873,6 +876,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   font-weight: bold;
   font-size: 2rem;
   color: white;
+  margin-top: 5rem;
 }
 
 @media (min-width: 768px) {
@@ -932,6 +936,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   .clients__container--img {
     width: 165px;
   }
+}
+
+.clients-svg {
+  position: absolute;
+  top: -100px;
+  left: -100px;
 }
 
 @media (max-width: 768px) {
