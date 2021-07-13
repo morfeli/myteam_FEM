@@ -1,3 +1,5 @@
+const hamburgerBtn = document.getElementsByClassName("toggle-button")[0];
+const navBarLinks = document.getElementsByClassName("navbar-links")[0];
 const aboutContainer = document.getElementById("about__container");
 const quotesContainer = document.getElementById("quotes__container");
 console.log(quotesContainer);
@@ -89,3 +91,7 @@ const renderQuotes = (arr) => {
   quotesContainer.innerHTML = quotes;
 };
 renderQuotes(quotes);
+
+hamburgerBtn.addEventListener("click", () => {
+  navBarLinks.classList.toggle("active");
+});

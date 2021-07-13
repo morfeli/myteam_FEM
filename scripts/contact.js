@@ -1,3 +1,5 @@
+const hamburgerBtn = document.getElementsByClassName("toggle-button")[0];
+const navBarLinks = document.getElementsByClassName("navbar-links")[0];
 const nameValue = document.getElementById("name");
 const emailValue = document.getElementById("emailaddress");
 const companyValue = document.getElementById("company");
@@ -66,3 +68,7 @@ function emailValidation() {
     emailError.innerText = "You entered an incorrect email!";
   }
 }
+
+hamburgerBtn.addEventListener("click", () => {
+  navBarLinks.classList.toggle("active");
+});

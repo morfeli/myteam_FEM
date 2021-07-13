@@ -1,3 +1,5 @@
+const hamburgerBtn = document.getElementsByClassName("toggle-button")[0];
+const navBarLinks = document.getElementsByClassName("navbar-links")[0];
 const directorsContainer = document.getElementById("directors__cardBox");
 const toggleBtn = document.getElementsByClassName("director__card--iconBox");
 console.log(toggleBtn);
@@ -113,3 +115,7 @@ Array.from(toggleBtn).forEach((el) =>
     }
   })
 );
+
+hamburgerBtn.addEventListener("click", () => {
+  navBarLinks.classList.toggle("active");
+});
