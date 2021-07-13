@@ -65,18 +65,31 @@ header {
   }
 }
 
+.navbar-item:hover {
+  color: $light-coral;
+  transition: 1s;
+}
+
 .navbar--btn {
   font-weight: bold;
   color: white;
   width: 173px;
   padding: 1.3rem;
-  border-radius: 30px;
+  border-radius: 50px;
   margin-bottom: 1rem;
   cursor: pointer;
   background-color: transparent;
   font-family: "Livvic", sans-serif;
   font-weight: 600;
   border: 2px solid white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar--btn:hover {
+  background-color: white;
+  color: $midnight-green;
+  transition: 1s;
 }
 
 .toggle-button {
@@ -162,8 +175,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   @include desktop {
     flex-direction: row;
     align-items: baseline;
-    width: 100%;
-    margin-left: 8rem;
+    width: fit-content;
+    background-image: url("../assets/bg-pattern-home-1.svg");
+    background-repeat: no-repeat;
+    background-position: -100px 10px;
+    padding-left: 10rem;
   }
 
   &--span {
@@ -182,7 +198,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     }
     @include desktop {
       font-size: 6.25rem;
-      width: 530px;
+      width: 600px;
       text-align: left;
     }
   }
@@ -201,10 +217,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     @include desktop {
       width: 440px;
       text-align: left;
-
+      line-height: 28px;
       font-size: 18px;
       position: relative;
-      left: 5rem;
+      left: 2rem;
+      top: 40px;
     }
   }
 
@@ -224,7 +241,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       height: 4px;
       position: relative;
       bottom: 5rem;
-      left: 8rem;
+      left: 5.1rem;
       background-color: #79c8c7;
       border: none;
     }
@@ -416,6 +433,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     border-radius: 50px;
     border-style: solid;
     border-color: $rapture-blue;
+    cursor: pointer;
     @include tablet {
       width: 70px;
       height: 70px;
@@ -454,6 +472,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     color: $whitebaby;
     font-size: 13px;
   }
+}
+
+.quote__container--svg:hover {
+  transform: rotate(360deg);
+  transition: 2s;
 }
 
 .ready__container {
@@ -628,6 +651,19 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       bottom: 5.5rem;
     }
   }
+  &--icon {
+    cursor: pointer;
+  }
+}
+
+.footer__container--a:hover {
+  color: $light-coral;
+  transition: 1s;
+}
+
+.footer__container--icon path:hover {
+  fill: $light-coral;
+  transition: 1s;
 }
 
 #copyright {

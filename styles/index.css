@@ -91,18 +91,33 @@ header {
   }
 }
 
+.navbar-item:hover {
+  color: #f67e7e;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .navbar--btn {
   font-weight: bold;
   color: white;
   width: 173px;
   padding: 1.3rem;
-  border-radius: 30px;
+  border-radius: 50px;
   margin-bottom: 1rem;
   cursor: pointer;
   background-color: transparent;
   font-family: "Livvic", sans-serif;
   font-weight: 600;
   border: 2px solid white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar--btn:hover {
+  background-color: white;
+  color: #014e56;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .toggle-button {
@@ -219,8 +234,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    width: 100%;
-    margin-left: 8rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-image: url("../assets/bg-pattern-home-1.svg");
+    background-repeat: no-repeat;
+    background-position: -100px 10px;
+    padding-left: 10rem;
   }
 }
 
@@ -247,7 +267,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 @media (min-width: 1440px) {
   .hero__container--title {
     font-size: 6.25rem;
-    width: 530px;
+    width: 600px;
     text-align: left;
   }
 }
@@ -273,9 +293,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   .hero__container--description {
     width: 440px;
     text-align: left;
+    line-height: 28px;
     font-size: 18px;
     position: relative;
-    left: 5rem;
+    left: 2rem;
+    top: 40px;
   }
 }
 
@@ -298,7 +320,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     height: 4px;
     position: relative;
     bottom: 5rem;
-    left: 8rem;
+    left: 5.1rem;
     background-color: #79c8c7;
     border: none;
   }
@@ -605,6 +627,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   border-radius: 50px;
   border-style: solid;
   border-color: #79c8c7;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -657,6 +680,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   font-style: italic;
   color: white;
   font-size: 13px;
+}
+
+.quote__container--svg:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .ready__container {
@@ -926,6 +956,22 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     left: 36rem;
     bottom: 5.5rem;
   }
+}
+
+.footer__container--icon {
+  cursor: pointer;
+}
+
+.footer__container--a:hover {
+  color: #f67e7e;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.footer__container--icon path:hover {
+  fill: #f67e7e;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 @media (min-width: 768px) {

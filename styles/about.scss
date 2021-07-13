@@ -65,19 +65,33 @@ header {
   }
 }
 
+.navbar-item:hover {
+  color: $light-coral;
+  transition: 1s;
+}
+
 .navbar--btn {
   font-weight: bold;
   color: white;
   width: 173px;
   padding: 1.3rem;
-  border-radius: 30px;
+  border-radius: 50px;
   margin-bottom: 1rem;
   cursor: pointer;
   background-color: transparent;
   font-family: "Livvic", sans-serif;
   font-weight: 600;
   border: 2px solid white;
+  text-align: center;
+  text-decoration: none;
 }
+
+.navbar--btn:hover {
+  background-color: white;
+  color: $midnight-green;
+  transition: 1s;
+}
+
 .toggle-button {
   position: absolute;
   top: 0.75rem;

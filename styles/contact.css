@@ -24,6 +24,12 @@ header {
   margin: 0 auto;
 }
 
+@media (min-width: 1440px) {
+  .navbar {
+    width: 1100px;
+  }
+}
+
 .navbar__logo {
   cursor: pointer;
 }
@@ -41,6 +47,13 @@ header {
   .navbar-links {
     margin-right: 8rem;
     width: 25vw;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .navbar-links {
+    width: 35vw;
   }
 }
 
@@ -71,18 +84,33 @@ header {
   }
 }
 
+.navbar-item:hover {
+  color: #f67e7e;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .navbar--btn {
   font-weight: bold;
   color: white;
   width: 173px;
   padding: 1.3rem;
-  border-radius: 30px;
+  border-radius: 50px;
   margin-bottom: 1rem;
   cursor: pointer;
   background-color: transparent;
   font-family: "Livvic", sans-serif;
   font-weight: 600;
   border: 2px solid white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar--btn:hover {
+  background-color: white;
+  color: #014e56;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .toggle-button {
@@ -513,11 +541,25 @@ textarea {
       justify-content: space-around;
 }
 
+@media (min-width: 1440px) {
+  .footer__container {
+    height: 25vh;
+    padding-bottom: 5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .footer__container--logo {
     position: relative;
     right: 15rem;
     top: 2.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer__container--logo {
+    right: 26.5rem;
+    top: 4.5rem;
   }
 }
 
@@ -539,6 +581,14 @@ textarea {
   }
 }
 
+@media (min-width: 1440px) {
+  .footer__container--ul {
+    width: 220px;
+    right: 27rem;
+    top: 7rem;
+  }
+}
+
 .footer__container--li {
   list-style: none;
 }
@@ -551,8 +601,22 @@ textarea {
   font-size: 15px;
 }
 
+@media (min-width: 1440px) {
+  .footer__container--a {
+    font-size: 18px;
+  }
+}
+
 .footer__container--addressBox {
   width: 327px;
+}
+
+@media (min-width: 1440px) {
+  .footer__container--addressBox {
+    right: 12rem;
+    top: 4.5rem;
+    position: relative;
+  }
 }
 
 .footer__container--p {
@@ -570,6 +634,14 @@ textarea {
     left: 12rem;
     bottom: 4rem;
     line-height: 3.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer__container--p {
+    line-height: unset;
+    text-align: left;
+    line-height: 25px;
   }
 }
 
@@ -592,10 +664,24 @@ textarea {
   }
 }
 
+@media (min-width: 1440px) {
+  .footer__container--icons {
+    left: 36rem;
+    bottom: 5.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   #copyright {
     position: relative;
     left: 14rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  #copyright {
+    left: 31.5rem;
+    bottom: 2rem;
   }
 }
 /*# sourceMappingURL=contact.css.map */

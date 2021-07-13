@@ -91,18 +91,33 @@ header {
   }
 }
 
+.navbar-item:hover {
+  color: #f67e7e;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .navbar--btn {
   font-weight: bold;
   color: white;
   width: 173px;
   padding: 1.3rem;
-  border-radius: 30px;
+  border-radius: 50px;
   margin-bottom: 1rem;
   cursor: pointer;
   background-color: transparent;
   font-family: "Livvic", sans-serif;
   font-weight: 600;
   border: 2px solid white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar--btn:hover {
+  background-color: white;
+  color: #014e56;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .toggle-button {

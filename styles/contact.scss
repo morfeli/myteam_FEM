@@ -17,6 +17,9 @@ header {
   padding-top: 2rem;
   width: 90vw;
   margin: 0 auto;
+  @include desktop {
+    width: 1100px;
+  }
 }
 
 .navbar__logo {
@@ -29,6 +32,10 @@ header {
   @include tablet {
     margin-right: 8rem;
     width: 25vw;
+    font-size: 18px;
+  }
+  @include desktop {
+    width: 35vw;
   }
 }
 
@@ -54,18 +61,31 @@ header {
   }
 }
 
+.navbar-item:hover {
+  color: $light-coral;
+  transition: 1s;
+}
+
 .navbar--btn {
   font-weight: bold;
   color: white;
   width: 173px;
   padding: 1.3rem;
-  border-radius: 30px;
+  border-radius: 50px;
   margin-bottom: 1rem;
   cursor: pointer;
   background-color: transparent;
   font-family: "Livvic", sans-serif;
   font-weight: 600;
   border: 2px solid white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar--btn:hover {
+  background-color: white;
+  color: $midnight-green;
+  transition: 1s;
 }
 
 .toggle-button {
@@ -379,12 +399,20 @@ textarea {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  @include desktop {
+    height: 25vh;
+    padding-bottom: 5rem;
+  }
 
   &--logo {
     @include tablet {
       position: relative;
       right: 15rem;
       top: 2.5rem;
+    }
+    @include desktop {
+      right: 26.5rem;
+      top: 4.5rem;
     }
   }
 
@@ -396,6 +424,11 @@ textarea {
       position: relative;
       top: 10rem;
       right: 15rem;
+    }
+    @include desktop {
+      width: 220px;
+      right: 27rem;
+      top: 7rem;
     }
   }
 
@@ -409,10 +442,18 @@ textarea {
     font-family: "Livvic", sans-serif;
     font-weight: 600;
     font-size: 15px;
+    @include desktop {
+      font-size: 18px;
+    }
   }
 
   &--addressBox {
     width: 327px;
+    @include desktop {
+      right: 12rem;
+      top: 4.5rem;
+      position: relative;
+    }
   }
 
   &--p {
@@ -428,6 +469,11 @@ textarea {
       bottom: 4rem;
       line-height: 3.5rem;
     }
+    @include desktop {
+      line-height: unset;
+      text-align: left;
+      line-height: 25px;
+    }
   }
 
   &--icons {
@@ -439,6 +485,10 @@ textarea {
       position: relative;
       right: 15rem;
     }
+    @include desktop {
+      left: 36rem;
+      bottom: 5.5rem;
+    }
   }
 }
 
@@ -446,5 +496,9 @@ textarea {
   @include tablet {
     position: relative;
     left: 14rem;
+  }
+  @include desktop {
+    left: 31.5rem;
+    bottom: 2rem;
   }
 }
