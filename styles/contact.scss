@@ -237,6 +237,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   padding-top: 3rem;
   position: relative;
   overflow: hidden;
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+  }
 }
 
 .contact__container {
@@ -244,6 +249,14 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  @include tablet {
+    margin-top: 2rem;
+  }
+  @include desktop {
+    align-items: unset;
+    margin-left: 3rem;
+  }
 
   &--title {
     font-family: "Livvic", sans-serif;
@@ -302,6 +315,19 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
 }
 
+.contact-svg {
+  display: none;
+  @include tablet {
+    display: block;
+    position: absolute;
+    left: -100px;
+    top: 0px;
+  }
+  @include desktop {
+    left: -260px;
+  }
+}
+
 .form__container {
   margin-top: 5rem;
   display: flex;
@@ -314,6 +340,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     align-items: baseline;
     margin: 0 auto;
     margin-top: 4rem;
+  }
+  @include desktop {
+    margin: unset;
+    position: relative;
+    bottom: 30px;
   }
   &--submit {
     width: 123px;
@@ -333,6 +364,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   position: absolute;
   bottom: -120px;
   right: -100px;
+  @include tablet {
+    bottom: -10px;
+  }
 }
 
 input {
