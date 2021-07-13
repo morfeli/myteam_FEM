@@ -234,7 +234,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 .main {
   background-color: $midnight-green;
-  padding-top: 5rem;
+  padding-top: 3rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .contact__container {
@@ -325,6 +327,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     background-color: $whitebaby;
     color: #004047;
   }
+}
+
+.form-svg {
+  position: absolute;
+  bottom: -120px;
+  right: -100px;
 }
 
 input {
