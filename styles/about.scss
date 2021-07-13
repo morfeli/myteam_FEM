@@ -8,6 +8,11 @@
 
 header {
   background-color: $midnight-green;
+  height: 520px;
+  overflow: hidden;
+  @include tablet {
+    height: 556px;
+  }
   @include desktop {
     height: 517px;
     overflow: hidden;
@@ -172,7 +177,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  //   overflow: hidden;
+  position: relative;
+  height: auto;
   @include desktop {
     flex-direction: row;
     overflow: unset;
@@ -213,16 +220,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
 
   &--svg {
-    position: relative;
-    left: 185px;
-    top: 100px;
+    position: absolute;
+    right: -100px;
+    bottom: -205px;
     @include tablet {
-      left: 24rem;
-      top: -6rem;
-    }
-    @include desktop {
-      top: 8rem;
-      left: 4rem;
+      bottom: -125px;
     }
   }
 

@@ -7,6 +7,14 @@
 
 header {
   background-color: #014e56;
+  height: 520px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 556px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -223,7 +231,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
+  position: relative;
+  height: auto;
 }
 
 @media (min-width: 1440px) {
@@ -284,22 +293,14 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 .hero__container--svg {
-  position: relative;
-  left: 185px;
-  top: 100px;
+  position: absolute;
+  right: -100px;
+  bottom: -205px;
 }
 
 @media (min-width: 768px) {
   .hero__container--svg {
-    left: 24rem;
-    top: -6rem;
-  }
-}
-
-@media (min-width: 1440px) {
-  .hero__container--svg {
-    top: 8rem;
-    left: 4rem;
+    bottom: -125px;
   }
 }
 
