@@ -1039,7 +1039,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     right: 0vw;
     padding-bottom: 2rem;
     font-size: 2rem;
-    height: 585px;
+    height: 583px;
     width: 235px;
     background-color: #2c6269;
   }
