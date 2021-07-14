@@ -201,11 +201,21 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   display: none;
 }
 
+.mobile-nav-svg {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .toggle-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .mobile-nav-svg {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 135px;
   }
   .navbar--btn-mobilemenu {
     display: block;
@@ -232,6 +242,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     display: none;
   }
   .navbar-links.active {
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
     display: block;
     position: absolute;
     top: 0px;
@@ -239,7 +252,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     padding-bottom: 2rem;
     font-size: 2rem;
     height: 667px;
-    width: 255px;
+    width: 235px;
     background-color: #2c6269;
   }
   .navbar-links ul {

@@ -208,6 +208,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   display: none;
 }
 
+.mobile-nav-svg {
+  display: none;
+}
+
 .hero__container {
   margin-top: 5rem;
   display: -webkit-box;
@@ -994,6 +998,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     display: -ms-flexbox;
     display: flex;
   }
+  .mobile-nav-svg {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 135px;
+  }
   .navbar--btn-mobilemenu {
     display: block;
     font-weight: bold;
@@ -1019,14 +1029,18 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     display: none;
   }
   .navbar-links.active {
+    overflow: hidden;
+    -webkit-transition: ease-in-out 5s linear;
+    transition: ease-in-out 5s linear;
+    z-index: 1;
     display: block;
     position: absolute;
     top: 0px;
     right: 0vw;
     padding-bottom: 2rem;
     font-size: 2rem;
-    height: 667px;
-    width: 255px;
+    height: 580px;
+    width: 235px;
     background-color: #2c6269;
   }
   .navbar-links ul {
